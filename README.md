@@ -1,36 +1,36 @@
 # Noom
 
-Zoom Clone using Nodejs, WebRTC and Websockets
+Zoom Clone using Nodejs, WebRTC, and Websockets
 
-- 자동 css 적용을 위한 mvp.css 사용
-- html 작성을 위한 pug 사용
-- express 서버 사용
-- 프로젝트 변경사항이 있을시 서버를 재시작하도록 Nodemon 사용
-  - 프로젝트 내에서는 babel-node를 실행하도록 한다.
-- 작성한 코드를 일반 Nodejs 코드로 컴파일 해주도록 babel 사용
+🛠 Tech Stack & Tools
+- Styling: Used MVP.css for automatic, no-class CSS styling.
+- Templating Engine: Pug for streamlined HTML structure.
+- Server: Built with Express.
+- Development Tools: * Nodemon to automatically restart the server on file changes.
+- Babel to compile modern JavaScript into standard Node.js code.
+- babel-node used for running the project in the development environment.
 
-### 기능
+✨ Features
+💬 Real-time Messaging
+- WebSocket Integration: Implemented a basic chat system using native WebSockets (feature/websocket).
+- Socket.io Chat Rooms (feature/socketio):
+  - Create and join specific chat rooms.
+  - Real-time notifications for user Join/Exit events.
+  - Nickname synchronization and message broadcasts within rooms.
+  - Global alerts for the creation or deletion of chat rooms.
+  - Live user count tracking per room.
+  - Integrated Socket.io Admin Panel for server-side monitoring.
 
-- websocket을 이용한 간단한 채팅 기능 구현 (feature/websocket)
-- socket.io를 이용한 채팅룸 구현(feature/socketio)
-  - 채팅룸 생성 및 join
-  - 채팅룸 join 시 알림
-  - 채팅룸 내에 닉네임과 메세지 알림
-  - 채팅룸 exit 시 알림
-  - 새로운 채팅방 생성 혹은 삭제될 경우 알림
-  - 채팅방 들어오고 나갈때마다 user 수 알림
-  - socket.io admin panel 연동
-- video call
-  - 소리 켜기 & 끄기 기능
-  - 카메라 켜기 & 끄기 기능
-  - 카메라 리스트를 통해 선택된 카메라 바꾸기
-  - 내 카메라 화면과 상대방 카메라 화면 한페이지에 같이 띄우기
-  - 카메라 변경시 상대방 화면에서도 카메라가 변경되어 보이도록
-  - localtunnel을 이용해 휴대폰에서도 접속할 수 있도록
-  - 같은 wifi가 아니어도 접속할 수 있도록 stun server 사용
-- 간단한 데이터채널 연동 및 테스트(feature/data-channel)
+📹 Video Call & WebRTC
+- Media Controls: Toggle audio (Mute/Unmute) and video (On/Off).
+- Device Management: Dynamic camera switching via a localized device list.
+- P2P Video Streaming: * Side-by-side view of local and remote video streams on a single page.
+  - Synchronized camera updates across all connected peers.
+- Connectivity:
+  - Used localtunnel for mobile device testing and external access.
+  - Integrated STUN servers to enable connections across different networks (NAT traversal).
+  - Implemented WebRTC Data Channels for low-latency data exchange (feature/data-channel).
 
-### 파일 구조
-
-- 서버는 src/server.js에서 핸들링
-- 프론트엔드는 src/public 폴더 내에서 핸들링
+📂 Project Structure
+- Backend: Server logic is handled in src/server.js.
+- Frontend: All client-side assets and logic are managed within the src/public directory.
