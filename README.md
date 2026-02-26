@@ -2,7 +2,7 @@
 
 Zoom Clone using Nodejs, WebRTC, and Websockets
 
-🛠 Tech Stack & Tools
+### 🛠 Tech Stack & Tools
 - Styling: Used MVP.css for automatic, no-class CSS styling.
 - Templating Engine: Pug for streamlined HTML structure.
 - Server: Built with Express.
@@ -10,8 +10,8 @@ Zoom Clone using Nodejs, WebRTC, and Websockets
 - Babel to compile modern JavaScript into standard Node.js code.
 - babel-node used for running the project in the development environment.
 
-✨ Features
-💬 Real-time Messaging
+## ✨ Features
+### 💬 Real-time Messaging
 - WebSocket Integration: Implemented a basic chat system using native WebSockets (feature/websocket).
 - Socket.io Chat Rooms (feature/socketio):
   - Create and join specific chat rooms.
@@ -21,7 +21,7 @@ Zoom Clone using Nodejs, WebRTC, and Websockets
   - Live user count tracking per room.
   - Integrated Socket.io Admin Panel for server-side monitoring.
 
-📹 Video Call & WebRTC
+### 📹 Video Call & WebRTC
 - Media Controls: Toggle audio (Mute/Unmute) and video (On/Off).
 - Device Management: Dynamic camera switching via a localized device list.
 - P2P Video Streaming: * Side-by-side view of local and remote video streams on a single page.
@@ -31,6 +31,6 @@ Zoom Clone using Nodejs, WebRTC, and Websockets
   - Integrated STUN servers to enable connections across different networks (NAT traversal).
   - Implemented WebRTC Data Channels for low-latency data exchange (feature/data-channel).
 
-📂 Project Structure
+### 📂 Project Structure
 - Backend: Server logic is handled in src/server.js.
 - Frontend: All client-side assets and logic are managed within the src/public directory.
